@@ -1,0 +1,218 @@
+/*--- Common ---*/
+body {
+    background: #f2f2f2;
+    font-family: 'Open Sans',Arial,sans-serif;
+    color: #767676;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.clear {
+    clear: both;
+    display: block;
+}
+
+.holder {
+    margin: auto;
+    max-width: 414px;
+    padding: 25px 0px;
+}
+
+    .holder .mainContent {
+        padding: 0px 20px;
+    }
+
+/*--- Header ---*/
+#Header {
+    background: #fff;
+}
+
+    #Header h1.floatLeft {
+        dispaly: block;
+        background: url(../images/juniper-logo.png) left top no-repeat;
+        background-size: cover;
+        width: 150px;
+        height: 41px;
+        overflow: hidden;
+        text-indent: -9999px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #Header h2.floatRight {
+        line-height: 41px;
+        text-align: right;
+        font-weight: normal;
+        color: #231f20;
+        font-size: 14px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+/*--- Content ---*/
+#Content {
+    font-weight: normal;
+}
+    /*question*/
+    #Content .question {
+    }
+
+        #Content .question h3 {
+            padding: 0px;
+            margin: 0px;
+            color: #3996b5;
+            font-size: 20px;
+            font-weight: 400px;
+            display: block;
+            background: url(../images/question-icon.png) left top no-repeat;
+            padding-left: 36px;
+            font-weight: normal;
+            line-height: 26px;
+            padding-bottom: 20px;
+        }
+
+        #Content .question .form-inline .form-control {
+            width: 100%;
+            padding: 20px 33px 20px 15px;
+            font-size: 14px;
+            font-family: 'Open Sans',Arial,sans-serif;
+            color: #767676;
+            font-weight: normal;
+        }
+
+
+
+
+
+        /*changes made*/
+        #Content .question .form-inline {
+            position: relative;
+            padding-top: 66px;
+        }
+
+            #Content .question .form-inline .mic {
+                padding-top: 20px;
+                padding-left: 40px;
+                cursor: pointer;
+                width: 100%;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                font-weight: normal;
+                font-style: normal;
+                line-height: 26px;
+                padding-bottom: 20px;
+                display: block;
+                font-size: 18px;
+                color: #3996b5;
+            }
+            /*changes made*/
+
+
+
+
+
+            #Content .question .form-inline .normal {
+                background: url(../images/mic-off.png) left 20px no-repeat;
+            }
+
+            #Content .question .form-inline .fa-microphone {
+                background: url(../images/mic-on.gif) left 20px no-repeat;
+            }
+
+            #Content .question .form-inline .fa-microphone-slash {
+                background: url(../images/mic-on.png) left 20px no-repeat;
+            }
+
+                #Content .question .form-inline .fa-microphone-slash.mic-off {
+                    background: url(../images/mic-off.png) left 20px no-repeat;
+                }
+
+    /*#Content .question .form-inline .mic-off { background: url(../images/mic-off.png) left top no-repeat; }
+#Content .question .form-inline .mic-on { background: url(../images/mic-on.gif) left top no-repeat; }/*
+/*answer*/
+    #Content .answer {
+        padding-top: 35px;
+    }
+
+    #Content .answerBlock {
+        background: #fff;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        margin-bottom: 15px;
+    }
+
+        #Content .answerBlock .answerHead {
+            font-weight: bold;
+            color: #5b5b5b;
+            line-height: 38px;
+            padding-left: 40px;
+            background: #ccc url(../images/ans.png) 17px 13px no-repeat;
+        }
+
+        #Content .answerBlock .answerOneLiner {
+            padding: 20px;
+        }
+
+        #Content .answerBlock .answerDetailed {
+            padding: 20px;
+            border-top: 1px solid #cccccc;
+        }
+
+            #Content .answerBlock .answerDetailed table.tabular {
+                width: 100%;
+            }
+
+                #Content .answerBlock .answerDetailed table.tabular td {
+                    padding: 5px;
+                    text-align: center;
+                    border-top: 1px solid #e0e0e0;
+                }
+
+                    #Content .answerBlock .answerDetailed table.tabular td a {
+                        text-decoration: none;
+                    }
+
+                #Content .answerBlock .answerDetailed table.tabular tr.thead td {
+                    border-bottom: 2px solid #e0e0e0;
+                    border-top: 0px;
+                    font-weight: bold;
+                    color: #3996bd;
+                }
+
+                #Content .answerBlock .answerDetailed table.tabular tr:hover {
+                    background: #f2f2f2;
+                }
+
+                #Content .answerBlock .answerDetailed table.tabular tr.thead:hover {
+                    background: none;
+                }
+
+                #Content .answerBlock .answerDetailed table.tabular td span {
+                    color: #15b400;
+                }
+
+                    #Content .answerBlock .answerDetailed table.tabular td span.committed {
+                        color: #b40000;
+                    }
+
+            #Content .answerBlock .answerDetailed a.more {
+                display: block;
+                margin-top: 10px;
+                border: 1px solid #ccc;
+                line-height: 36px;
+                color: #707070;
+                text-decoration: none;
+                border-radius: 3px;
+                text-align: center;
+            }
+
+                #Content .answerBlock .answerDetailed a.more:hover {
+                    background: #f2f2f2;
+                }

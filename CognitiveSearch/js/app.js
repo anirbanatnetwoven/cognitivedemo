@@ -130,10 +130,18 @@ function startRecording() {
     clearText();
 
     window.setTimeout(function () {
-        stopRecording();
-        stopPropagation();
+        timeoutStopper();
     }, 12000);
 }
+
+
+function timeoutStopper() {
+    if (micStatus == true) {
+        stopRecording();
+        stopPropagation();
+    }
+}
+
 
 //stop button actions
 function stopPropagation() {

@@ -1,7 +1,7 @@
 var data = [
     {
         question: 'What Juniper products do they have at Michigan State University',
-        keywords: ['JUN', 'PROD'],
+        keywords: ['WHAT', 'PROD'],
         answer: 'Michigan State University has an installed base of EX, MX, SRX high-end, SRX branch, Junos Space, NetScreen, NSM, Junos Pulse and Firefly.',
         data: {}
     },
@@ -34,6 +34,6 @@ var data = [
     
 ];
 
-var randomAnswers = ["I'm sorry, I am not able to parse that question!", "I'm going to think about that and get back to you later.", "I really don't have time for this nonsense."];
+var randomAnswers = ["I'm sorry, I do not understand the question"];
 
 var key = "f0aa9071060a4dd09178ea4c36190785";

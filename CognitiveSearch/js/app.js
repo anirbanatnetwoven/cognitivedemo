@@ -163,7 +163,7 @@ function checkMic() {
         micStatus = true;
         //start recognition
         startRecording();
-        mic.html("Click again to send your question");
+        mic.html("Click to send");
     } else {
         stopRecording();
         stopPropagation();
